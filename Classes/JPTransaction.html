@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>JPTransaction Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">JudoKitObjC </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">JudoPayments</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/amount">amount</option>
+		
+		<option value="//api/name/apiSession">apiSession</option>
+		
+		<option value="//api/name/card">card</option>
+		
+		<option value="//api/name/deviceSignal">deviceSignal</option>
+		
+		<option value="//api/name/emailAddress">emailAddress</option>
+		
+		<option value="//api/name/judoId">judoId</option>
+		
+		<option value="//api/name/location">location</option>
+		
+		<option value="//api/name/mobileNumber">mobileNumber</option>
+		
+		<option value="//api/name/paymentToken">paymentToken</option>
+		
+		<option value="//api/name/pkPayment">pkPayment</option>
+		
+		<option value="//api/name/reference">reference</option>
+		
+		<option value="//api/name/transactionPath">transactionPath</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/listWithCompletion:">- listWithCompletion:</option>
+		
+		<option value="//api/name/listWithPagination:completion:">- listWithPagination:completion:</option>
+		
+		<option value="//api/name/sendWithCompletion:">- sendWithCompletion:</option>
+		
+		<option value="//api/name/setPkPayment:error:">- setPkPayment:error:</option>
+		
+		<option value="//api/name/threeDSecureWithParameters:receiptId:completion:">- threeDSecureWithParameters:receiptId:completion:</option>
+		
+		<option value="//api/name/validateTransaction">- validateTransaction</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">JPTransaction Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>JPTransaction.h<br />JPTransaction.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Superclass Helper for Payment, Pre-auth and RegisterCard</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/transactionPath" title="transactionPath"></a>
+	<h3 class="method-title"><code><a href="#//api/name/transactionPath">&nbsp;&nbsp;transactionPath</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>path variable made for subclassing to identify the api path</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) NSString *transactionPath</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JPTransaction.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/judoId" title="judoId"></a>
+	<h3 class="method-title"><code><a href="#//api/name/judoId">&nbsp;&nbsp;judoId</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The judo ID for the transaction</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *judoId</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JPTransaction.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/reference" title="reference"></a>
+	<h3 class="method-title"><code><a href="#//api/name/reference">&nbsp;&nbsp;reference</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The reference of the transaction</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) JPReference *reference</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JPTransaction.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/amount" title="amount"></a>
+	<h3 class="method-title"><code><a href="#//api/name/amount">&nbsp;&nbsp;amount</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The amount and currency of the transaction</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) JPAmount *amount</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JPTransaction.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/card" title="card"></a>
+	<h3 class="method-title"><code><a href="#//api/name/card">&nbsp;&nbsp;card</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The card info of the transaction</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) JPCard *card</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JPTransaction.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/paymentToken" title="paymentToken"></a>
+	<h3 class="method-title"><code><a href="#//api/name/paymentToken">&nbsp;&nbsp;paymentToken</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The payment token of the transaction</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) JPPaymentToken *paymentToken</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JPTransaction.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/pkPayment" title="pkPayment"></a>
+	<h3 class="method-title"><code><a href="#//api/name/pkPayment">&nbsp;&nbsp;pkPayment</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>the PKPayment object for ApplePay</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) PKPayment *pkPayment</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JPTransaction.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/location" title="location"></a>
+	<h3 class="method-title"><code><a href="#//api/name/location">&nbsp;&nbsp;location</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Location coordinate for fraud prevention in this transaction</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CLLocationCoordinate2D location</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JPTransaction.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deviceSignal" title="deviceSignal"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deviceSignal">&nbsp;&nbsp;deviceSignal</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Device identification for this transaction</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSDictionary *deviceSignal</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JPTransaction.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/mobileNumber" title="mobileNumber"></a>
+	<h3 class="method-title"><code><a href="#//api/name/mobileNumber">&nbsp;&nbsp;mobileNumber</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Mobile number of the entity initiating the transaction</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *mobileNumber</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JPTransaction.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/emailAddress" title="emailAddress"></a>
+	<h3 class="method-title"><code><a href="#//api/name/emailAddress">&nbsp;&nbsp;emailAddress</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Email address of the entity initiating the transaction</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *emailAddress</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JPTransaction.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/apiSession" title="apiSession"></a>
+	<h3 class="method-title"><code><a href="#//api/name/apiSession">&nbsp;&nbsp;apiSession</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The current Session to access the Judo API</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) JPSession *apiSession</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JPTransaction.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setPkPayment:error:" title="setPkPayment:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setPkPayment:error:">&ndash;&nbsp;setPkPayment:error:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>set the PKPayment object</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setPkPayment:(nonnull PKPayment *)<em>pkPayment</em> error:(NSError *__autoreleasing _Nullable *_Nullable)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>pkPayment</code></th>
+						<td><p>the PKPayment object that was returned from PassKit</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>an error if the PKPayment object was faulty</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JPTransaction.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/validateTransaction" title="validateTransaction"></a>
+	<h3 class="method-title"><code><a href="#//api/name/validateTransaction">&ndash;&nbsp;validateTransaction</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Helper method that checks if the transaction is valid</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable NSError *)validateTransaction</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>error if transaction is not valid</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JPTransaction.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sendWithCompletion:" title="sendWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sendWithCompletion:">&ndash;&nbsp;sendWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Completion caller - this method will automatically trigger a Session Call to the judo REST API and execute the request based on the information that were set in the previous methods</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)sendWithCompletion:(nonnull void ( ^ ) ( JPResponse *_Nullable , NSError *_Nullable ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>a completion block that is called when the request finishes</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JPTransaction.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/threeDSecureWithParameters:receiptId:completion:" title="threeDSecureWithParameters:receiptId:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/threeDSecureWithParameters:receiptId:completion:">&ndash;&nbsp;threeDSecureWithParameters:receiptId:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>threeDSecure call - this method will automatically trigger a Session Call to the judo REST API and execute the finalizing 3DS call on top of the information that had been sent in the previous methods</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)threeDSecureWithParameters:(nonnull NSDictionary *)<em>parameters</em> receiptId:(nonnull NSString *)<em>receiptId</em> completion:(nonnull void ( ^ ) ( JPResponse *_Nullable , NSError *_Nullable ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>parameters</code></th>
+						<td><p>the dictionary that contains all the information from the 3DS UIWebView Request</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>receiptId</code></th>
+						<td><p>the receipt for the given Transaction</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>a completion block that is called when the request finishes</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JPTransaction.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/listWithCompletion:" title="listWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/listWithCompletion:">&ndash;&nbsp;listWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This method will return a list of transactions, filtered to just show the payment or preAuth transactions. The method will show the first 10 items in a Time Descending order. See <a href="https://www.judopay.com/docs/v4_1/restful-api/api-reference/#transactions">List all transactions</a> for more information.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)listWithCompletion:(nonnull void ( ^ ) ( JPResponse *_Nullable , NSError *_Nullable ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>a completion block that is called when the request finishes</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JPTransaction.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/listWithPagination:completion:" title="listWithPagination:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/listWithPagination:completion:">&ndash;&nbsp;listWithPagination:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This method will return a list of transactions, filtered to just show the payment or pre-auth transactions. See <a href="https://www.judopay.com/docs/v4_1/restful-api/api-reference/#transactions">List all transactions</a> for more information.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)listWithPagination:(nullable JPPagination *)<em>pagination</em> completion:(nonnull void ( ^ ) ( JPResponse *_Nullable , NSError *_Nullable ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>pagination</code></th>
+						<td><p>The offset, number of items and order in which to return the items</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>a completion block that is called when the request finishes</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JPTransaction.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 JudoPayments. All rights reserved. Updated: 2016-04-20</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

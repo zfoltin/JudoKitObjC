@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>JudoPayInputDelegate Protocol Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">JudoKitObjC </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">JudoPayments</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/billingCountryInput:didSelect:">- billingCountryInput:didSelect:</option>
+		
+		<option value="//api/name/cardInput:didDetectNetwork:">- cardInput:didDetectNetwork:</option>
+		
+		<option value="//api/name/cardInput:didFailWithError:">- cardInput:didFailWithError:</option>
+		
+		<option value="//api/name/cardInput:didFindValidNumber:">- cardInput:didFindValidNumber:</option>
+		
+		<option value="//api/name/dateInput:didFailWithError:">- dateInput:didFailWithError:</option>
+		
+		<option value="//api/name/dateInput:didFindValidDate:">- dateInput:didFindValidDate:</option>
+		
+		<option value="//api/name/issueNumberInputDidEnterCode:withIssueNumber:">- issueNumberInputDidEnterCode:withIssueNumber:</option>
+		
+		<option value="//api/name/judoPayInput:didValidate:">- judoPayInput:didValidate:</option>
+		
+		<option value="//api/name/judoPayInputDidChangeText:">- judoPayInputDidChangeText:</option>
+		
+		<option value="//api/name/postCodeInputField:didFailWithError:">- postCodeInputField:didFailWithError:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">JudoPayInputDelegate Protocol Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Conforms to</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>JPInputField.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The JudoPayInputDelegate is a delegate protocol that is used to pass information about the state of entering information for making transactions</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/cardInput:didFailWithError:" title="cardInput:didFailWithError:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cardInput:didFailWithError:">&ndash;&nbsp;cardInput:didFailWithError:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delegate method that is triggered when the <a href="../Classes/CardInputField.html">CardInputField</a> encountered an error</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cardInput:(CardInputField *)<em>input</em> didFailWithError:(NSError *)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>input</code></th>
+						<td><p>The input field calling the delegate method</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>The error that occured</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JPInputField.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cardInput:didFindValidNumber:" title="cardInput:didFindValidNumber:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cardInput:didFindValidNumber:">&ndash;&nbsp;cardInput:didFindValidNumber:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delegate method that is triggered when the <a href="../Classes/CardInputField.html">CardInputField</a> did find a valid number</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cardInput:(CardInputField *)<em>input</em> didFindValidNumber:(NSString *)<em>cardNumberString</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>input</code></th>
+						<td><p>The input field calling the delegate method</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>cardNumberString</code></th>
+						<td><p>The card number that has been entered as a String</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JPInputField.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cardInput:didDetectNetwork:" title="cardInput:didDetectNetwork:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cardInput:didDetectNetwork:">&ndash;&nbsp;cardInput:didDetectNetwork:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delegate method that is triggered when the <a href="../Classes/CardInputField.html">CardInputField</a> detected a network</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cardInput:(CardInputField *)<em>input</em> didDetectNetwork:(CardNetwork)<em>network</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>input</code></th>
+						<td><p>The input field calling the delegate method</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>network</code></th>
+						<td><p>The network that has been identified</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JPInputField.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/dateInput:didFailWithError:" title="dateInput:didFailWithError:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/dateInput:didFailWithError:">&ndash;&nbsp;dateInput:didFailWithError:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delegate method that is triggered when the date input field has encountered an error</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)dateInput:(DateInputField *)<em>input</em> didFailWithError:(NSError *)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>input</code></th>
+						<td><p>The input field calling the delegate method</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>The error that occured</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JPInputField.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/dateInput:didFindValidDate:" title="dateInput:didFindValidDate:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/dateInput:didFindValidDate:">&ndash;&nbsp;dateInput:didFindValidDate:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delegate method that is triggered when the date input field has found a valid date</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)dateInput:(DateInputField *)<em>input</em> didFindValidDate:(NSString *)<em>date</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>input</code></th>
+						<td><p>The input field calling the delegate method</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>date</code></th>
+						<td><p>The valid date that has been entered</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JPInputField.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/issueNumberInputDidEnterCode:withIssueNumber:" title="issueNumberInputDidEnterCode:withIssueNumber:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/issueNumberInputDidEnterCode:withIssueNumber:">&ndash;&nbsp;issueNumberInputDidEnterCode:withIssueNumber:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delegate method that is triggered when the issueNumberInputField entered a code</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)issueNumberInputDidEnterCode:(IssueNumberInputField *)<em>input</em> withIssueNumber:(NSString *)<em>issueNumber</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>input</code></th>
+						<td><p>The issueNumberInputField calling the delegate method</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>issueNumber</code></th>
+						<td><p>The issue number that has been entered as a String</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JPInputField.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/billingCountryInput:didSelect:" title="billingCountryInput:didSelect:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/billingCountryInput:didSelect:">&ndash;&nbsp;billingCountryInput:didSelect:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delegate method that is triggered when the billingCountry input field selected a <a href="../Constants/BillingCountry.html">BillingCountry</a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)billingCountryInput:(BillingCountryInputField *)<em>input</em> didSelect:(BillingCountry)<em>billingCountry</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>input</code></th>
+						<td><p>The input field calling the delegate method</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>billingCountry</code></th>
+						<td><p>The billing country that has been selected</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JPInputField.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/postCodeInputField:didFailWithError:" title="postCodeInputField:didFailWithError:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/postCodeInputField:didFailWithError:">&ndash;&nbsp;postCodeInputField:didFailWithError:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delegate method that is triggered when the post code input field has received an invalid entry</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)postCodeInputField:(PostCodeInputField *)<em>input</em> didFailWithError:(NSError *)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>input</code></th>
+						<td><p>The input field calling the delegate method</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>The error that occured</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JPInputField.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/judoPayInput:didValidate:" title="judoPayInput:didValidate:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/judoPayInput:didValidate:">&ndash;&nbsp;judoPayInput:didValidate:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delegate method that is triggered when the judoPayInputField was validated</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)judoPayInput:(JPInputField *)<em>input</em> didValidate:(BOOL)<em>valid</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>input</code></th>
+						<td><p>The input field calling the delegate method</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>valid</code></th>
+						<td><p>A boolean that indicates whether the input is valid or invalid</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JPInputField.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/judoPayInputDidChangeText:" title="judoPayInputDidChangeText:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/judoPayInputDidChangeText:">&ndash;&nbsp;judoPayInputDidChangeText:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delegate method that is called whenever any inputField has been manipulated</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)judoPayInputDidChangeText:(JPInputField *)<em>input</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>input</code></th>
+						<td><p>The input field calling the delegate method</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JPInputField.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 JudoPayments. All rights reserved. Updated: 2016-04-20</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

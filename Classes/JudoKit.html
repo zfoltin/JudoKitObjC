@@ -1,0 +1,1473 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>JudoKit Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">JudoKitObjC </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">JudoPayments</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/activeViewController">activeViewController</option>
+		
+		<option value="//api/name/apiSession">apiSession</option>
+		
+		<option value="//api/name/theme">theme</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/collectionWithReceiptId:amount:">- collectionWithReceiptId:amount:</option>
+		
+		<option value="//api/name/initWithToken:secret:">- initWithToken:secret:</option>
+		
+		<option value="//api/name/initWithToken:secret:allowJailbrokenDevices:">- initWithToken:secret:allowJailbrokenDevices:</option>
+		
+		<option value="//api/name/invokePayment:amount:consumerReference:cardDetails:completion:">- invokePayment:amount:consumerReference:cardDetails:completion:</option>
+		
+		<option value="//api/name/invokePreAuth:amount:consumerReference:cardDetails:completion:">- invokePreAuth:amount:consumerReference:cardDetails:completion:</option>
+		
+		<option value="//api/name/invokeRegisterCard:amount:consumerReference:cardDetails:completion:">- invokeRegisterCard:amount:consumerReference:cardDetails:completion:</option>
+		
+		<option value="//api/name/invokeTokenPayment:amount:consumerReference:cardDetails:paymentToken:completion:">- invokeTokenPayment:amount:consumerReference:cardDetails:paymentToken:completion:</option>
+		
+		<option value="//api/name/invokeTokenPreAuth:amount:consumerReference:cardDetails:paymentToken:completion:">- invokeTokenPreAuth:amount:consumerReference:cardDetails:paymentToken:completion:</option>
+		
+		<option value="//api/name/list:paginated:completion:">- list:paginated:completion:</option>
+		
+		<option value="//api/name/paymentWithJudoId:amount:reference:">- paymentWithJudoId:amount:reference:</option>
+		
+		<option value="//api/name/preAuthWithJudoId:amount:reference:">- preAuthWithJudoId:amount:reference:</option>
+		
+		<option value="//api/name/receipt:">- receipt:</option>
+		
+		<option value="//api/name/refundWithReceiptId:amount:">- refundWithReceiptId:amount:</option>
+		
+		<option value="//api/name/registerCardWithJudoId:amount:reference:">- registerCardWithJudoId:amount:reference:</option>
+		
+		<option value="//api/name/transactionForType:judoId:amount:reference:">- transactionForType:judoId:amount:reference:</option>
+		
+		<option value="//api/name/transactionForTypeClass:judoId:amount:reference:">- transactionForTypeClass:judoId:amount:reference:</option>
+		
+		<option value="//api/name/voidWithReceiptId:amount:">- voidWithReceiptId:amount:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">JudoKit Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>JudoKit.h<br />JudoKit.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Entry point for interacting with judoKit</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/apiSession" title="apiSession"></a>
+	<h3 class="method-title"><code><a href="#//api/name/apiSession">&nbsp;&nbsp;apiSession</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>JudoKit api session</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) JPSession *apiSession</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JudoKit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/theme" title="theme"></a>
+	<h3 class="method-title"><code><a href="#//api/name/theme">&nbsp;&nbsp;theme</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>the theme of any judoSession</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) JPTheme *theme</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JudoKit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/activeViewController" title="activeViewController"></a>
+	<h3 class="method-title"><code><a href="#//api/name/activeViewController">&nbsp;&nbsp;activeViewController</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>the currently active and visible viewController instance</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, weak) JudoPayViewController *activeViewController</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JudoKit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithToken:secret:allowJailbrokenDevices:" title="initWithToken:secret:allowJailbrokenDevices:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithToken:secret:allowJailbrokenDevices:">&ndash;&nbsp;initWithToken:secret:allowJailbrokenDevices:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>designated initializer of JudoKit</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nonnull instancetype)initWithToken:(nonnull NSString *)<em>token</em> secret:(nonnull NSString *)<em>secret</em> allowJailbrokenDevices:(BOOL)<em>jailbrokenDevicesAllowed</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>token</code></th>
+						<td><p>a string object representing the token</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>secret</code></th>
+						<td><p>a string object representing the secret</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>jailbrokenDevicesAllowed</code></th>
+						<td><p>a boolean indicating whether the sdk should allow access from jailbroken devices</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>a new instance of JudoKit</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JudoKit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithToken:secret:" title="initWithToken:secret:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithToken:secret:">&ndash;&nbsp;initWithToken:secret:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>convenient initializer of JudoKit. This allows Jailbroken devices to make payments by default</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nonnull instancetype)initWithToken:(nonnull NSString *)<em>token</em> secret:(nonnull NSString *)<em>secret</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>token</code></th>
+						<td><p>a string object representing the token</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>secret</code></th>
+						<td><p>a string object representing the secret</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>a new instance of JudoKit</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JudoKit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/invokePayment:amount:consumerReference:cardDetails:completion:" title="invokePayment:amount:consumerReference:cardDetails:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/invokePayment:amount:consumerReference:cardDetails:completion:">&ndash;&nbsp;invokePayment:amount:consumerReference:cardDetails:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This method will invoke the Judo UI on the top UI<a href="../Classes/ViewController.html">ViewController</a> instance of the Applications window. When the form has been successfully filled, the button will invoke a payment with the judo API and respond in a completion block</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)invokePayment:(nonnull NSString *)<em>judoId</em> amount:(nonnull JPAmount *)<em>amount</em> consumerReference:(nonnull NSString *)<em>reference</em> cardDetails:(nullable JPCardDetails *)<em>cardDetails</em> completion:(nonnull void ( ^ ) ( JPResponse *_Nullable , NSError *_Nullable ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>judoId</code></th>
+						<td><p>The judoID of the merchant to receive the payment</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>amount</code></th>
+						<td><p>The amount and currency of the payment (default is GBP)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>reference</code></th>
+						<td><p>holds consumer and payment reference and a meta data dictionary which can hold any kind of JSON formatted information up to 1024 characters</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>cardDetails</code></th>
+						<td><p>The card details to present in the input fields</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>The completion handler which will respond with a <a href="../Classes/JPResponse.html">JPResponse</a> object or an NSError</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JudoKit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/invokePreAuth:amount:consumerReference:cardDetails:completion:" title="invokePreAuth:amount:consumerReference:cardDetails:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/invokePreAuth:amount:consumerReference:cardDetails:completion:">&ndash;&nbsp;invokePreAuth:amount:consumerReference:cardDetails:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This method will invoke the Judo UI on the top UI<a href="../Classes/ViewController.html">ViewController</a> instance of the Applications window. When the form has been successfully filled, the button will invoke a pre-auth with the judo API and respond in a completion block</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)invokePreAuth:(nonnull NSString *)<em>judoId</em> amount:(nonnull JPAmount *)<em>amount</em> consumerReference:(nonnull NSString *)<em>reference</em> cardDetails:(nullable JPCardDetails *)<em>cardDetails</em> completion:(nonnull void ( ^ ) ( JPResponse *_Nullable , NSError *_Nullable ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>judoId</code></th>
+						<td><p>The judoID of the merchant to receive the pre-auth</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>amount</code></th>
+						<td><p>The amount and currency of the pre-auth (default is GBP)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>reference</code></th>
+						<td><p>holds consumer and payment reference and a meta data dictionary which can hold any kind of JSON formatted information up to 1024 characters</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>cardDetails</code></th>
+						<td><p>The card details to present in the input fields</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>The completion handler which will respond with a <a href="../Classes/JPResponse.html">JPResponse</a> object or an NSError</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JudoKit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/invokeRegisterCard:amount:consumerReference:cardDetails:completion:" title="invokeRegisterCard:amount:consumerReference:cardDetails:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/invokeRegisterCard:amount:consumerReference:cardDetails:completion:">&ndash;&nbsp;invokeRegisterCard:amount:consumerReference:cardDetails:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This method will invoke the Judo UI on the top UI<a href="../Classes/ViewController.html">ViewController</a> instance of the Applications window. When the form has been successfully filled, the button will invoke a card registration with the judo API and respond in a completion block</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)invokeRegisterCard:(nonnull NSString *)<em>judoId</em> amount:(nonnull JPAmount *)<em>amount</em> consumerReference:(nonnull NSString *)<em>reference</em> cardDetails:(nullable JPCardDetails *)<em>cardDetails</em> completion:(nonnull void ( ^ ) ( JPResponse *_Nullable , NSError *_Nullable ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>judoId</code></th>
+						<td><p>The judoID of the merchant to receive the pre-auth</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>amount</code></th>
+						<td><p>The amount and currency of the pre-auth (default is GBP)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>reference</code></th>
+						<td><p>holds consumer and payment reference and a meta data dictionary which can hold any kind of JSON formatted information up to 1024 characters</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>cardDetails</code></th>
+						<td><p>The card details to present in the input fields</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>The completion handler which will respond with a <a href="../Classes/JPResponse.html">JPResponse</a> object or an NSError</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JudoKit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/invokeTokenPayment:amount:consumerReference:cardDetails:paymentToken:completion:" title="invokeTokenPayment:amount:consumerReference:cardDetails:paymentToken:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/invokeTokenPayment:amount:consumerReference:cardDetails:paymentToken:completion:">&ndash;&nbsp;invokeTokenPayment:amount:consumerReference:cardDetails:paymentToken:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This method will invoke the Judo UI on the top UI<a href="../Classes/ViewController.html">ViewController</a> instance of the Applications window. This method needs the cardDetails object in order to show the known details to the user when entering the CV2. When the form has been successfully filled, the button will invoke a token payment with the judo API and respond in a completion block</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)invokeTokenPayment:(nonnull NSString *)<em>judoId</em> amount:(nonnull JPAmount *)<em>amount</em> consumerReference:(nonnull NSString *)<em>reference</em> cardDetails:(nonnull JPCardDetails *)<em>cardDetails</em> paymentToken:(nonnull JPPaymentToken *)<em>paymentToken</em> completion:(nonnull void ( ^ ) ( JPResponse *_Nullable , NSError *_Nullable ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>judoId</code></th>
+						<td><p>The judoID of the merchant to receive the token payment</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>amount</code></th>
+						<td><p>The amount and currency of the payment (default is GBP)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>reference</code></th>
+						<td><p>holds consumer and payment reference and a meta data dictionary which can hold any kind of JSON formatted information up to 1024 characters</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>cardDetails</code></th>
+						<td><p>The card details to present in the input fields</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>paymentToken</code></th>
+						<td><p>The consumer and card token to make a token payment with</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>The completion handler which will respond with a <a href="../Classes/JPResponse.html">JPResponse</a> object or an NSError</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JudoKit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/invokeTokenPreAuth:amount:consumerReference:cardDetails:paymentToken:completion:" title="invokeTokenPreAuth:amount:consumerReference:cardDetails:paymentToken:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/invokeTokenPreAuth:amount:consumerReference:cardDetails:paymentToken:completion:">&ndash;&nbsp;invokeTokenPreAuth:amount:consumerReference:cardDetails:paymentToken:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This method will invoke the Judo UI on the top UI<a href="../Classes/ViewController.html">ViewController</a> instance of the Applications window. This method needs the cardDetails object in order to show the known details to the user when entering the CV2. When the form has been successfully filled, the button will invoke a token pre-auth with the judo API and respond in a completion block</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)invokeTokenPreAuth:(nonnull NSString *)<em>judoId</em> amount:(nonnull JPAmount *)<em>amount</em> consumerReference:(nonnull NSString *)<em>reference</em> cardDetails:(nonnull JPCardDetails *)<em>cardDetails</em> paymentToken:(nonnull JPPaymentToken *)<em>paymentToken</em> completion:(nonnull void ( ^ ) ( JPResponse *_Nullable , NSError *_Nullable ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>judoId</code></th>
+						<td><p>The judoID of the merchant to receive the token pre-auth</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>amount</code></th>
+						<td><p>The amount and currency of the pre-auth (default is GBP)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>reference</code></th>
+						<td><p>holds consumer and payment reference and a meta data dictionary which can hold any kind of JSON formatted information up to 1024 characters</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>cardDetails</code></th>
+						<td><p>The card details to present in the input fields</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>paymentToken</code></th>
+						<td><p>The consumer and card token to make a token payment with</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>The completion handler which will respond with a <a href="../Classes/JPResponse.html">JPResponse</a> object or an NSError</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JudoKit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/paymentWithJudoId:amount:reference:" title="paymentWithJudoId:amount:reference:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/paymentWithJudoId:amount:reference:">&ndash;&nbsp;paymentWithJudoId:amount:reference:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This method only creates a <a href="../Classes/JPPayment.html">JPPayment</a> object for usages in a custom UI. This means the developer needs to set the remaining mandatory fields like a payment method (card, token or PKPayment object for ApplePay) to then make the transaction</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nonnull JPPayment *)paymentWithJudoId:(nonnull NSString *)<em>judoId</em> amount:(nonnull JPAmount *)<em>amount</em> reference:(nonnull JPReference *)<em>reference</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>judoId</code></th>
+						<td><p>The judoID of the merchant to receive the transaction</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>amount</code></th>
+						<td><p>The amount and currency of the payment (default is GBP)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>reference</code></th>
+						<td><p>holds consumer and payment reference and a meta data dictionary which can hold any kind of JSON formatted information up to 1024 characters</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>a <a href="../Classes/JPPayment.html">JPPayment</a> object</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JudoKit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/preAuthWithJudoId:amount:reference:" title="preAuthWithJudoId:amount:reference:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/preAuthWithJudoId:amount:reference:">&ndash;&nbsp;preAuthWithJudoId:amount:reference:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This method only creates a <a href="../Classes/JPPreAuth.html">JPPreAuth</a> object for usages in a custom UI. This means the developer needs to set the remaining mandatory fields like a payment method (card, token or PKPayment object for ApplePay) to then make the transaction</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nonnull JPPreAuth *)preAuthWithJudoId:(nonnull NSString *)<em>judoId</em> amount:(nonnull JPAmount *)<em>amount</em> reference:(nonnull JPReference *)<em>reference</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>judoId</code></th>
+						<td><p>The judoID of the merchant to receive the transaction</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>amount</code></th>
+						<td><p>The amount and currency of the pre-auth (default is GBP)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>reference</code></th>
+						<td><p>holds consumer and payment reference and a meta data dictionary which can hold any kind of JSON formatted information up to 1024 characters</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>a <a href="../Classes/JPPreAuth.html">JPPreAuth</a> object</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JudoKit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/registerCardWithJudoId:amount:reference:" title="registerCardWithJudoId:amount:reference:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/registerCardWithJudoId:amount:reference:">&ndash;&nbsp;registerCardWithJudoId:amount:reference:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This method only creates a <a href="../Classes/JPRegisterCard.html">JPRegisterCard</a> object for usages in a custom UI. This means the developer needs to set the remaining mandatory fields like a payment method (card, token or PKPayment object for ApplePay) to then make the transaction</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nonnull JPRegisterCard *)registerCardWithJudoId:(nonnull NSString *)<em>judoId</em> amount:(nullable JPAmount *)<em>amount</em> reference:(nonnull JPReference *)<em>reference</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>judoId</code></th>
+						<td><p>The judoID of the merchant to receive the transaction</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>amount</code></th>
+						<td><p>The amount and currency of the pre-auth (default is GBP)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>reference</code></th>
+						<td><p>holds consumer and payment reference and a meta data dictionary which can hold any kind of JSON formatted information up to 1024 characters</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>a <a href="../Classes/JPRegisterCard.html">JPRegisterCard</a> object</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JudoKit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/collectionWithReceiptId:amount:" title="collectionWithReceiptId:amount:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/collectionWithReceiptId:amount:">&ndash;&nbsp;collectionWithReceiptId:amount:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This method creates a <a href="../Classes/JPCollection.html">JPCollection</a> object that can be used to collect a previously pre-authorized transaction.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nonnull JPCollection *)collectionWithReceiptId:(nonnull NSString *)<em>receiptId</em> amount:(nonnull JPAmount *)<em>amount</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>receiptId</code></th>
+						<td><p>the receipt ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>amount</code></th>
+						<td><p>The amount and currency of the collection (default is GBP)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>a <a href="../Classes/JPCollection.html">JPCollection</a> object</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JudoKit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/voidWithReceiptId:amount:" title="voidWithReceiptId:amount:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/voidWithReceiptId:amount:">&ndash;&nbsp;voidWithReceiptId:amount:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This method creates a <a href="../Classes/JPVoid.html">JPVoid</a> object that can be used to void a previously pre-authorized transaction to free the reserved funds on the users card</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nonnull JPVoid *)voidWithReceiptId:(nonnull NSString *)<em>receiptId</em> amount:(nonnull JPAmount *)<em>amount</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>receiptId</code></th>
+						<td><p>the receipt ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>amount</code></th>
+						<td><p>The amount and currency of the void (default is GBP)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>a <a href="../Classes/JPVoid.html">JPVoid</a> object</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JudoKit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/refundWithReceiptId:amount:" title="refundWithReceiptId:amount:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/refundWithReceiptId:amount:">&ndash;&nbsp;refundWithReceiptId:amount:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This method creates a <a href="../Classes/JPRefund.html">JPRefund</a> object that can be used to refund a previous payment transaction and refunds the given amount back to the users card</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nonnull JPRefund *)refundWithReceiptId:(nonnull NSString *)<em>receiptId</em> amount:(nonnull JPAmount *)<em>amount</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>receiptId</code></th>
+						<td><p>the receipt ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>amount</code></th>
+						<td><p>The amount and currency of the refund (default is GBP)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>a <a href="../Classes/JPRefund.html">JPRefund</a> object</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JudoKit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/receipt:" title="receipt:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/receipt:">&ndash;&nbsp;receipt:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Create a <a href="../Classes/JPReceipt.html">JPReceipt</a> object to query for a given receipt ID or all receipts.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nonnull JPReceipt *)receipt:(nullable NSString *)<em>receiptId</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>receiptId</code></th>
+						<td><p>the receipt ID to query for - nil for a list of all receipts</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>a <a href="../Classes/JPReceipt.html">JPReceipt</a> object</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JudoKit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/list:paginated:completion:" title="list:paginated:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/list:paginated:completion:">&ndash;&nbsp;list:paginated:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>a helper method that lists all the transaction for a given class that conforms to <a href="../Classes/JPTransaction.html">JPTransaction</a> (<a href="../Classes/JPPayment.html">JPPayment</a>, <a href="../Classes/JPPreAuth.html">JPPreAuth</a>, <a href="../Classes/JPRegisterCard.html">JPRegisterCard</a>)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)list:(nonnull Class)<em>type</em> paginated:(nullable JPPagination *)<em>pagination</em> completion:(nonnull void ( ^ ) ( JPResponse *_Nullable , NSError *_Nullable ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>type</code></th>
+						<td><p>the Class that conforms to <a href="../Classes/JPTransaction.html">JPTransaction</a> to be queried for its list</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>pagination</code></th>
+						<td><p>an optional pagination object for multi-paged requests</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>The completion handler which will respond with a <a href="../Classes/JPResponse.html">JPResponse</a> object or an NSError</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JudoKit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/transactionForTypeClass:judoId:amount:reference:" title="transactionForTypeClass:judoId:amount:reference:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/transactionForTypeClass:judoId:amount:reference:">&ndash;&nbsp;transactionForTypeClass:judoId:amount:reference:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Helper method that creates a Transaction based on the Class that is passed (<a href="../Classes/JPPayment.html">JPPayment</a>, <a href="../Classes/JPPreAuth.html">JPPreAuth</a> or <a href="../Classes/JPRegisterCard.html">JPRegisterCard</a>)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nonnull JPTransaction *)transactionForTypeClass:(nonnull Class)<em>type</em> judoId:(nonnull NSString *)<em>judoId</em> amount:(nonnull JPAmount *)<em>amount</em> reference:(nonnull JPReference *)<em>reference</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>type</code></th>
+						<td><p>the Class that conforms to <a href="../Classes/JPTransaction.html">JPTransaction</a> to be created with this method</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>judoId</code></th>
+						<td><p>The judoID of the merchant to receive the transaction</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>amount</code></th>
+						<td><p>The amount and currency of the transaction (default is GBP)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>reference</code></th>
+						<td><p>holds consumer and payment reference and a meta data dictionary which can hold any kind of JSON formatted information up to 1024 characters</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>a <a href="../Classes/JPTransaction.html">JPTransaction</a> object</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JudoKit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/transactionForType:judoId:amount:reference:" title="transactionForType:judoId:amount:reference:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/transactionForType:judoId:amount:reference:">&ndash;&nbsp;transactionForType:judoId:amount:reference:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Helper method that creates a Transaction based on the <a href="../Constants/TransactionType.html">TransactionType</a> that is passed (Payment, PreAuth or RegisterCard)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nonnull JPTransaction *)transactionForType:(TransactionType)<em>type</em> judoId:(nonnull NSString *)<em>judoId</em> amount:(nonnull JPAmount *)<em>amount</em> reference:(nonnull JPReference *)<em>reference</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>type</code></th>
+						<td><p>the <a href="../Constants/TransactionType.html">TransactionType</a> to be created with this method</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>judoId</code></th>
+						<td><p>The judoID of the merchant to receive the transaction</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>amount</code></th>
+						<td><p>The amount and currency of the transaction (default is GBP)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>reference</code></th>
+						<td><p>holds consumer and payment reference and a meta data dictionary which can hold any kind of JSON formatted information up to 1024 characters</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>a <a href="../Classes/JPTransaction.html">JPTransaction</a> object</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JudoKit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 JudoPayments. All rights reserved. Updated: 2016-04-20</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
