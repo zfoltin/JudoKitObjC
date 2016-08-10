@@ -1,6 +1,6 @@
 //
-//  JudoTestCaseConfig.swift
-//  JudoKitObjC
+//  ExampleAppCredentials.m
+//  JudoKitObjCExample
 //
 //  Copyright (c) 2016 Alternative Payments Ltd
 //
@@ -22,8 +22,15 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
-import Foundation
+#import <Foundation/Foundation.h>
 
-let token = "<#YOUR TOKEN#>";
-let secret = "<#YOUR SECRET#>"
-let myJudoId = "<#YOUR JUDOID#>"
+#pragma warning "set your own token and secret to see testing results"
+
+static NSString * const token   = @"<#YOUR TOKEN#>";
+static NSString * const secret  = @"<#YOUR SECRET#>";
+static NSString * const judoId              = @"<#YOUR JUDOID#>";
+static NSString * const tokenPayReference   = @"<#YOUR REFERENCE#>";
+
+@interface ExampleAppCredentials : NSObject
+
+@end
