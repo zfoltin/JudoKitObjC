@@ -24,7 +24,7 @@
 
 #import "JudoKit.h"
 
-#import <JudoShield/JudoShield.h>
+#import "JudoShield.h"
 
 #import "JPSession.h"
 #import "JPPayment.h"

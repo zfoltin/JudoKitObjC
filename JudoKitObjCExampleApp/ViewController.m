@@ -28,8 +28,8 @@
 #import "JudoKitObjC.h"
 
 #pragma warning "set your own token and secret to see testing results"
-static NSString * const token   = @"<#YOUR TOKEN#>";
-static NSString * const secret  = @"<#YOUR SECRET#>";
+static NSString * const token   = @"0VdCngNT3ZDFaMgQ";
+static NSString * const secret  = @"6b58fc9083bdcc902bd75691274946a653ed9a7e817ce2456c85ead520b5dba7";
 
 typedef NS_ENUM(NSUInteger, TableViewContent) {
     TableViewContentPayment,
@@ -39,8 +39,8 @@ typedef NS_ENUM(NSUInteger, TableViewContent) {
     TableViewContentTokenPreAuth
 };
 
-static NSString * const judoId              = @"<#YOUR JUDO-ID#>";
-static NSString * const tokenPayReference   = @"<#YOUR REFERENCE#>";
+static NSString * const judoId              = @"100144013";
+static NSString * const tokenPayReference   = @"MYREF";
 
 static NSString * const kCellIdentifier     = @"com.judo.judopaysample.tableviewcellidentifier";
 
