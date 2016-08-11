@@ -142,8 +142,9 @@
 		702804361CE9C96D00150B21 /* CardDetailsSetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702804351CE9C96D00150B21 /* CardDetailsSetTests.swift */; };
 		702804381CE9F9AC00150B21 /* JudoTestCaseConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702804271CE3873A00150B21 /* JudoTestCaseConfig.swift */; };
 		703EDB981CB7FD5F00ACF0B5 /* ErrorMessageContentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703EDB971CB7FD5F00ACF0B5 /* ErrorMessageContentsTests.swift */; };
-		70ADDCF21D5C8D590043D55F /* JudoShieldStaticLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 70ADDCF01D5C8D590043D55F /* JudoShieldStaticLib.h */; };
-		70ADDCF31D5C8D590043D55F /* libJudoShieldStaticLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 70ADDCF11D5C8D590043D55F /* libJudoShieldStaticLib.a */; };
+		709D7AB51D5CCAB300BFA78C /* JudoShieldStaticLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 709D7AB31D5CCAB300BFA78C /* JudoShieldStaticLib.h */; };
+		709D7AC81D5CD6E600BFA78C /* JudoShield.h in Headers */ = {isa = PBXBuildFile; fileRef = 709D7AC61D5CD6E600BFA78C /* JudoShield.h */; };
+		709D7AC91D5CD6E600BFA78C /* libJudoShieldStaticLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 709D7AC71D5CD6E600BFA78C /* libJudoShieldStaticLib.a */; };
 		70F102E51CB281AB006EEC48 /* BillingCountry.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B5AFC0F1C9184F700DABB4C /* BillingCountry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA7DF5B31C7B7A8300652A1F /* JPAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B9711991C761B9700E9A347 /* JPAddress.m */; };
 /* End PBXBuildFile section */
@@ -321,9 +322,10 @@
 		702804351CE9C96D00150B21 /* CardDetailsSetTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardDetailsSetTests.swift; sourceTree = "<group>"; };
 		702804371CE9F7A100150B21 /* JudoPayViewControllerTestable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JudoPayViewControllerTestable.h; sourceTree = "<group>"; };
 		703EDB971CB7FD5F00ACF0B5 /* ErrorMessageContentsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorMessageContentsTests.swift; sourceTree = "<group>"; };
+		709D7AB31D5CCAB300BFA78C /* JudoShieldStaticLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JudoShieldStaticLib.h; path = /Users/ashleybarrett/Documents/iOS/JudoKitObjC/JudoShield/JudoShieldStaticLib.h; sourceTree = "<absolute>"; };
+		709D7AC61D5CD6E600BFA78C /* JudoShield.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JudoShield.h; path = JudoShield/JudoShield.h; sourceTree = "<group>"; };
+		709D7AC71D5CD6E600BFA78C /* libJudoShieldStaticLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJudoShieldStaticLib.a; path = JudoShield/libJudoShieldStaticLib.a; sourceTree = "<group>"; };
 		70ADDC911D5B54410043D55F /* ExampleAppCredentials.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleAppCredentials.h; sourceTree = "<group>"; };
-		70ADDCF01D5C8D590043D55F /* JudoShieldStaticLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JudoShieldStaticLib.h; path = JudoShield/JudoShieldStaticLib.h; sourceTree = "<group>"; };
-		70ADDCF11D5C8D590043D55F /* libJudoShieldStaticLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJudoShieldStaticLib.a; path = JudoShield/libJudoShieldStaticLib.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -346,7 +348,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70ADDCF31D5C8D590043D55F /* libJudoShieldStaticLib.a in Frameworks */,
+				709D7AC91D5CD6E600BFA78C /* libJudoShieldStaticLib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,8 +366,8 @@
 		3B4EB3931C981E4C006265A0 /* JudoShield */ = {
 			isa = PBXGroup;
 			children = (
-				70ADDCF01D5C8D590043D55F /* JudoShieldStaticLib.h */,
-				70ADDCF11D5C8D590043D55F /* libJudoShieldStaticLib.a */,
+				709D7AC61D5CD6E600BFA78C /* JudoShield.h */,
+				709D7AC71D5CD6E600BFA78C /* libJudoShieldStaticLib.a */,
 			);
 			name = JudoShield;
 			sourceTree = "<group>";
@@ -632,7 +634,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70ADDCF21D5C8D590043D55F /* JudoShieldStaticLib.h in Headers */,
+				709D7AB51D5CCAB300BFA78C /* JudoShieldStaticLib.h in Headers */,
 				3B678BA91C7327040001DC2F /* JPCollection.h in Headers */,
 				3B678B7F1C6DE0FA0001DC2F /* JPPagination.h in Headers */,
 				3B678B8B1C6DF9D00001DC2F /* JPAmount.h in Headers */,
@@ -645,6 +647,7 @@
 				3B5362A21C7CBD9000CEBAE2 /* LoadingView.h in Headers */,
 				3B678B831C6DE2850001DC2F /* JPResponse.h in Headers */,
 				3B678B991C71D9D60001DC2F /* JPPaymentToken.h in Headers */,
+				709D7AC81D5CD6E600BFA78C /* JudoShield.h in Headers */,
 				3B97119B1C76353E00E9A347 /* JPAddress.h in Headers */,
 				3B5362A61C7CBE4A00CEBAE2 /* JP3DSWebView.h in Headers */,
 				3B4EB3911C981511006265A0 /* UIColor+Judo.h in Headers */,
@@ -1184,6 +1187,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/JudoShield",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.judopay.JudoKitObjC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -1214,6 +1218,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/JudoShield",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.judopay.JudoKitObjC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
