@@ -24,7 +24,7 @@
 
 #import "JudoKit.h"
 
-#import "JudoShield.h"
+#import "JudoShieldStaticLib.h"
 
 #import "JPSession.h"
 #import "JPPayment.h"
@@ -55,7 +55,7 @@
 @property (nonatomic, strong, readwrite) JPSession *apiSession;
 
 // deviceDNA for fraud prevention
-@property (nonatomic, strong) JudoShield *judoShield;
+@property (nonatomic, strong) JudoShieldStaticLib *judoShield;
 @property (nonatomic, assign) CLLocationCoordinate2D currentLocation;
 
 @end
@@ -265,9 +265,9 @@
 	return _theme;
 }
 
-- (JudoShield *)judoShield {
+- (JudoShieldStaticLib *)judoShield {
     if (!_judoShield) {
-        _judoShield = [JudoShield new];
+        _judoShield = [JudoShieldStaticLib new];
     }
     return _judoShield;
 }

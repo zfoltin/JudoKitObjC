@@ -1,5 +1,5 @@
 //
-//  JudoShield.h
+//  JudoShieldStaticLib.h
 //  JudoShield
 //
 //  Copyright (c) 2016 Alternative Payments Ltd
@@ -31,7 +31,7 @@ FOUNDATION_EXPORT const unsigned char JudoShieldVersionString[];
 
 @import CoreLocation;
 
-@interface JudoShield : NSObject
+@interface JudoShieldStaticLib : NSObject
 
 
 /**
