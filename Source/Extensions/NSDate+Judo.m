@@ -27,7 +27,21 @@
 @implementation NSDate (Judo)
 
 - (NSDate *)dateByAddingYears:(NSInteger)years {
-    return [[NSCalendar currentCalendar] dateByAddingUnit:NSCalendarUnitYear value:years toDate:self options:0];
+    NSCalendar *cal = [NSCalendar currentCalendar];
+    NSDate *date;
+    
+    if (NSFoundationVersionNumber < NSFoundationVersionNumber_iOS_8_0) {
+        
+        NSDateComponents *dateComponents = [NSDateComponents new];
+        [dateComponents setYear:years];
+        date = [cal dateByAddingComponents:dateComponents toDate:self options:0];
+    }
+    else {
+        
+        date = [cal dateByAddingUnit:NSCalendarUnitYear value:years toDate:self options:0];
+    }
+    
+    return date;
 }
 
 - (NSDate *)endOfMonthDate {

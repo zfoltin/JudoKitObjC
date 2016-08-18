@@ -79,8 +79,21 @@
     } else if (newString.length == 3) {
         return [newString characterAtIndex:2] == '/';
     } else if (newString.length == 4) {
-        NSInteger deciYear = ([[NSCalendar currentCalendar] component:NSCalendarUnitYear fromDate:[NSDate new]] - 2000) / 10.0;
         
+        NSInteger year;
+        NSInteger deciYear;
+        NSCalendar *cal = [NSCalendar currentCalendar];
+        
+        if (NSFoundationVersionNumber < NSFoundationVersionNumber_iOS_8_0) {
+            
+            NSDateComponents *components = [cal components:NSCalendarUnitYear fromDate:[NSDate new]];
+            year = [components year];
+        }
+        else {
+            year = [cal component:NSCalendarUnitYear fromDate:[NSDate new]] ;
+        }
+
+        deciYear = (year - 2000) / 10.0;
         NSString *lastNumberString = [newString substringFromIndex:3];
         
         if (!lastNumberString.isNumeric) {
