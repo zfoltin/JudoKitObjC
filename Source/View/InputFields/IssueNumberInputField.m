@@ -68,7 +68,7 @@
 }
 
 - (NSString *)hintLabelText {
-    return @"Issue number on front of card";
+    return @"Issue on front of card";
 }
 
 @end
