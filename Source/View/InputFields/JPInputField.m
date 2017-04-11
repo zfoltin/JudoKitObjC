@@ -82,6 +82,10 @@
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[text(40)]" options:NSLayoutFormatAlignAllBaseline metrics:nil views:@{@"text":self.textField}]];
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[hintLabel]|" options:NSLayoutFormatAlignAllBaseline metrics:nil views:@{@"hintLabel":self.hintLabel}]];
     
+    //Added height constraint in case error/text is not shown
+    _heightConstraint = [NSLayoutConstraint constraintWithItem:self attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1.0 constant:self.theme.inputFieldHeight];
+    [self addConstraint:_heightConstraint];
+    
     [self setActive:false];
     
     [self.textField setPlaceholder:[self title] floatingTitle:[self title]];
@@ -224,16 +228,26 @@
 - (void)displayHint:(NSString *)message {
     self.hintLabel.text = message;
     self.hintLabel.textColor = self.theme.judoTextColor;
+    [self updateConstraints:message];
 }
 
 - (void)displayError:(NSString *)message {
     self.hintLabel.text = message;
     self.hintLabel.textColor = self.theme.judoErrorColor;
+    [self updateConstraints:message];
+}
+
+- (void)updateConstraints:(NSString*)message{
+    _heightConstraint.constant = message.length == 0 ? 50 : self.theme.inputFieldHeight;
+    [UIView animateWithDuration:0.2 animations:^{
+        [self layoutIfNeeded];
+    }];
 }
 
 - (void)setRedBlockFrameAndBackgroundColor:(CGFloat)height backgroundColor:(UIColor *)backgroundColor {
     self.redBlock.backgroundColor = backgroundColor;
-    self.redBlock.frame = CGRectMake(13.0f, self.frame.size.height - 22, self.frame.size.width - 26.0f, height);
+    float yPosition = self.frame.size.height == 50 ? 4 : 22;
+    self.redBlock.frame = CGRectMake(13.0f, self.frame.size.height - yPosition, self.frame.size.width - 26.0f, height);
 }
 
 - (void)redBlockAsError {

@@ -176,6 +176,8 @@
  */
 @property (nonatomic, assign, readonly) BOOL isValid;
 
+@property (nonatomic, assign) NSLayoutConstraint* heightConstraint;
+
 
 /**
  *  Designated Initializer for the JPInputField and its subclasses
