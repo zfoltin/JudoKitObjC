@@ -69,7 +69,7 @@ static NSString const * discoverPrefixes = @"65,6011,644,645,646,647,648,649,622
     }
     
     if (!networkAccepted && network != CardNetworkUnknown) {
-        *error = [NSError judoInputMismatchErrorWithMessage:[NSString stringWithFormat:@"We do not accept %@", [JPCardDetails titleForCardNetwork:network]]];
+        *error = [NSError judoInputMismatchErrorWithMessage:[NSString stringWithFormat:@"We don't accept %@%@", [JPCardDetails titleForCardNetwork:network], @", please use other cards"]];
         return nil;
     }
     
