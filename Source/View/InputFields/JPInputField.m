@@ -28,6 +28,10 @@
 
 #import "FloatingTextField.h"
 #import "CardLogoView.h"
+#import "BillingCountryInputField.h"
+#import "PostCodeInputField.h"
+#import "SecurityCodeInputField.h"
+#import "IssueNumberInputField.h"
 
 @interface JPInputField ()
 
@@ -36,7 +40,7 @@
 @property (nonatomic, strong) UIView *logoContainerView;
 
 @property (nonatomic, strong) UIView *redBlock;
-    
+
 @property (nonatomic, strong) UILabel *hintLabel;
 
 @property (nonatomic) BOOL hasRedblockBeenLaidout;
@@ -46,12 +50,12 @@
 @implementation JPInputField
 
 - (instancetype)initWithTheme:(JPTheme *)theme {
-	self = [super init];
-	if (self) {
+    self = [super init];
+    if (self) {
         self.theme = theme;
         [self setupView];
-	}
-	return self;
+    }
+    return self;
 }
 
 - (void)setupView {
@@ -83,8 +87,11 @@
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[hintLabel]|" options:NSLayoutFormatAlignAllBaseline metrics:nil views:@{@"hintLabel":self.hintLabel}]];
     
     //Added height constraint in case error/text is not shown
-    _heightConstraint = [NSLayoutConstraint constraintWithItem:self attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1.0 constant:self.theme.inputFieldHeight];
-    [self addConstraint:_heightConstraint];
+    CGFloat height = [self isKindOfClass:[BillingCountryInputField class]] || [self isKindOfClass:[PostCodeInputField class]] ? 0.0 : self.theme.inputFieldHeight ;
+    _heightConstraint = [NSLayoutConstraint constraintWithItem:self attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1.0 constant:height];
+    if (![self isKindOfClass:[SecurityCodeInputField class]] && ![self isKindOfClass:[IssueNumberInputField class]]){
+        [self addConstraint:_heightConstraint];
+    }
     
     [self setActive:false];
     
@@ -100,11 +107,11 @@
         [self.logoContainerView addSubview:logoView];
         
         [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-(3.5)-[logo(30)]" options:NSLayoutFormatAlignAllBaseline metrics:nil views:@{@"logo":self.logoContainerView}]];
-
+        
         
         [self.logoContainerView addConstraint:[NSLayoutConstraint constraintWithItem:self.logoContainerView attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1.0 constant:30.0]];
     }
-
+    
     NSString *visualFormat = [self containsLogo] ? @"|-13-[text][logo(46)]-13-|" : @"|-13-[text]-13-|";
     
     NSDictionary *views = @{@"text": self.textField, @"logo": self.logoContainerView};
@@ -113,7 +120,7 @@
     
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-13-[hintLabel]-13-|" options:NSLayoutFormatDirectionLeftToRight metrics:nil views:@{@"hintLabel":self.hintLabel}]];
 }
-   
+
 - (void)layoutSubviews {
     if (!self.hasRedblockBeenLaidout) {
         [super layoutSubviews];
@@ -121,7 +128,7 @@
         self.hasRedblockBeenLaidout = YES;
     }
 }
-    
+
 - (void)errorAnimation:(BOOL)showRedBlock {
     void (^blockAnimation)(BOOL) = ^void(BOOL didFinish) {
         CAKeyframeAnimation *contentViewAnimation = [CAKeyframeAnimation animation];
